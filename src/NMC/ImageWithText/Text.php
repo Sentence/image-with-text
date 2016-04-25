@@ -228,7 +228,7 @@ class Text
      * Distribute text to lines
      * @throws \Exception If text is too long given available lines and max character width
      */
-    protected function distributeText()
+    public function distributeText()
     {
         // Explode input text on word boundaries
         $words = explode(' ', $this->text);
