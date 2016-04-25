@@ -120,7 +120,7 @@ class Text
      * Array of available lines, with character counts and allocated words
      * @var array
      */
-    protected $lines;
+    public $lines;
 
     /**
      * Construct
