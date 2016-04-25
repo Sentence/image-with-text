@@ -210,6 +210,12 @@ class Text
                         $offsetX = $imageWidth - $line['width'] - $this->startX;
                         $offsetY = $this->startY + $this->lineHeight + ($this->lineHeight * $i);
                         break;
+                    case 'middle':
+                        $imageWidth = $image->getWidth();
+                        $imageHeight = $image->getHeight();
+                        $offsetX = $imageWidth / 2 - $lineWidth / 2;
+                        $offsetY = $imageHeight / 2  - ($this->lineHeight * (count($this->lines) - 1) / 2) + $this->lineHeight * $i;
+                        break;
                 }
 
                 // Render text onto image
