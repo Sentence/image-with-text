@@ -118,6 +118,15 @@ class Image
     }
 
     /**
+     * Get image height
+     * @return int
+     */
+    public function getHeight()
+    {
+        return imagesy($this->image->resource);
+    }
+
+    /**
      * Get image
      * @return \Intervention\Image\Image
      */
